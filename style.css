@@ -1,0 +1,11 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    background: #f4f4f4;
+}
+
+canvas {
+    background: white;
+    border: 2px solid black;
+}
