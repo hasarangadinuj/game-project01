@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Dino Rush</title>
-        <link rel="stylesheet" href="./style.css">
-    </head>
-    <body>
-        <canvas id="game" width="800" height="300"></canvas>
-        <script src="./script.js"></script>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0b1020">
+    <title>Dino Rush</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%A6%96</text></svg>">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="shell">
+        <header class="masthead">
+            <h1>Dino<span>Rush</span></h1>
+            <p class="tagline">Run far. Duck low. Don't get eaten.</p>
+        </header>
+
+        <div class="stage">
+            <canvas id="game" width="800" height="300" aria-label="Dino Rush game"></canvas>
+        </div>
+
+        <section class="legend" aria-label="Controls">
+            <div class="legend-row">
+                <span><kbd>Space</kbd> <kbd>&uarr;</kbd> jump &middot; hold to jump higher</span>
+                <span><kbd>&darr;</kbd> duck &middot; fast-fall</span>
+            </div>
+            <div class="legend-row muted">
+                <span><kbd>P</kbd> pause</span>
+                <span><kbd>M</kbd> mute</span>
+                <span><kbd>R</kbd> restart</span>
+                <span class="touch-only">tap top half to jump &middot; hold bottom half to duck</span>
+            </div>
+        </section>
+    </main>
+    <script src="./script.js"></script>
+</body>
 </html>
